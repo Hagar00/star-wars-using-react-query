@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Planets from './components/Planets';
-import People from './components/People';
+import Planets from './pages/Planets';
+import People from './pages/People';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       <h1>Star Wars Info</h1>
       <Navbar setPage={setPage}/>
       <div className='content'>
-      {page === 'planets'?<Planets/>:<People/>}
+      { page === 'planets' ? <Planets/> : <People/> }
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Person({person}) {
+function PersonCard({person}) {
   return (
-     <div className="card">
+    <div className="card">
       <h3>{ person.name }</h3>
       <p>Gender - { person.gender }</p>
       <p>Birth year - { person.birth_year }</p>
@@ -10,4 +10,4 @@ function Person({person}) {
   )
 }
 
-export default Person
+export default PersonCard
